@@ -1,0 +1,830 @@
+﻿* {
+  transition: all 0.1s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*padding-top: 50px;*/
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+  white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+  max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #777;
+  border-color: #fff;
+}
+
+/*.headers.show {*/
+/*transform: translateX(30%);*/
+/*position: relative;
+    animation-name: slideAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}*/
+.headers {
+  padding-top: 10vh;
+}
+
+/* NavBar Style */
+.navbar {
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 0 15px;
+}
+
+.navbar-collapse {
+  height: 100%;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+
+.nav-link {
+  display: flex !important;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: brown;
+}
+
+/* End of NavBar Style */
+
+/* Greetings Style */
+
+#greetingsContainer {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+}
+
+#greetingsContainer > div > h1 {
+  font-size: 80px;
+}
+
+.greetingsText {
+  position: relative;
+  animation-name: greetings;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.nameText {
+  position: relative;
+  animation-name: name;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.do-animation {
+  animation-name: someanim;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes someanim {
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+/* .circle1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #303030;
+  position: absolute;
+  right: 0px;
+  top: 110px;
+  animation-name: bounce1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #303030;
+  position: absolute;
+  bottom: 20px;
+  animation-name: bounce2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce1 {
+  0% {
+    right: 10px;
+    top: 110px;
+  }
+
+  25% {
+    right: 20%;
+    top: 110px;
+  }
+
+  50% {
+    right: 10px;
+    top: 110px;
+  }
+
+  75% {
+    right: 10px;
+    top: 40%;
+  }
+
+  100% {
+    right: 10px;
+    top: 110px;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    left: 10px;
+    bottom: 20px;
+  }
+
+  25% {
+    left: 20%;
+    bottom: 20px;
+  }
+
+  50% {
+    left: 10px;
+    bottom: 20px;
+  }
+
+  75% {
+    left: 10px;
+    bottom: 40%;
+  }
+
+  100% {
+    left: 10px;
+    bottom: 20px;
+  }
+}
+
+@keyframes greetings {
+  0% {
+    left: 150px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes name {
+  0% {
+    right: 150px;
+  }
+
+  100% {
+    right: 0px;
+  }
+} */
+
+/* End of Greetings Style */
+
+/* About Style */
+
+#aboutContainer {
+  height: 100vh;
+}
+
+.aboutHeader {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutHeader > h1 {
+  color: #e04a4a;
+  text-transform: uppercase;
+  font-weight: bolder;
+  /*animation: slideAnimation 3s ease-out;*/
+}
+
+.aboutContent {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 20% 70%;
+  margin-left: 5%;
+}
+
+.aboutImg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutImg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutTxt > p {
+  font-size: 25px;
+}
+
+@keyframes slideAnimation {
+  0% {
+    right: 150px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+/* End of About Style */
+
+/* Education Style */
+
+#educationContainer {
+  height: 100%;
+}
+
+.educationHeader {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.educationHeader > h1 {
+  color: #e04a4a;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.education {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.education > .card {
+  height: calc(150vh / 4);
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1%;
+  border-radius: 20px;
+}
+
+.education > .card:hover {
+  transform: scale(105%);
+}
+
+.education > .card:hover img {
+  transform: translateY(-50%) scale(200%);
+}
+
+.education > .card > img {
+  width: 20%;
+  margin: 10px;
+}
+
+#onhsImg {
+  width: 37%;
+}
+
+/* End of Education Style */
+
+/* Work Experience Style */
+#workContainer {
+  height: 100vh;
+}
+
+.workHeader {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workHeader > h1 {
+  color: #e04a4a;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work > .workCards {
+  display: flex;
+  width: 50%;
+  margin: 1% 0;
+}
+
+.work > .workCards > .workImgs {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.work > .workCards > .workImgs > img {
+  width: 9vw;
+}
+
+.workCards:hover .workImgs {
+  transform: scale(105%);
+}
+
+.workCards:hover .workTxts > h4 {
+  transform: translateX(13%) scale(125%);
+  position: relative;
+}
+
+#dacpaImg {
+  height: 60%;
+  width: 15vw;
+}
+
+.work > .workCards > .workTxts {
+  width: 70%;
+}
+
+.work > .workCards > .workTxts > h4 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* End of Work Experience Style */
+
+/* Projects Style */
+#projectContainer {
+  height: 100vh;
+}
+
+.projectHeader {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectHeader > h1 {
+  color: #e04a4a;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* End of Projects Style */
+
+/* Contact Me Style */
+
+#contactContainer {
+  height: 100vh;
+}
+
+.contactHeader {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHeader > h1 {
+  color: #e04a4a;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.contact {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact > .card,
+.contact > .contactLinks > .card {
+  height: calc(150vh / 5);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1%;
+  border-radius: 20px;
+}
+
+.contactLinks {
+  text-decoration: none;
+  color: white;
+}
+
+.contactLinks:focus,
+.contactLinks:hover,
+.contactLinks:active {
+  color: brown;
+  transform: scale(105%);
+}
+
+.card > i {
+  margin: 3%;
+}
+
+/* End of Contact Me Style */
+
+/* Scroll to top */
+.scroll-to-top-container {
+  /*height: 10vh;
+    display: flex;
+    justify-content: flex-end;*/
+}
+
+.scroll-to-top-button {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: brown;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  width: 75px;
+  height: 75px;
+  box-shadow: 1px 0 5px black;
+  transform: translateY(150%);
+}
+
+.scroll-to-top-button:hover {
+  color: white;
+}
+.scroll-button-reveal {
+  animation-name: reveal;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.scroll-button-hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes reveal {
+  100% {
+    transform: translateY(10%);
+  }
+}
+@keyframes hide {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(150%);
+  }
+}
+/* Ends Here */
+
+/* Footer */
+footer {
+  margin: 0 2%;
+}
+/* Ends Here */
+
+/* Media Queries */
+@media only screen and (min-width: 320px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: max-content !important;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1930px) {
+  #greetingsContainer {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 2561px) and (min-width: 1930px) {
+  .navbar {
+    height: 7vh;
+  }
+
+  .navbar-brand {
+    font-size: 40px;
+  }
+
+  .nav-link {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    height: 200%;
+    position: relative;
+  }
+
+  .navbar-brand {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(95vh / 5.9);
+  }
+}
+
+@media only screen and (max-width: 3000px) and (min-width: 1990px) {
+  .aboutTxt > p {
+    font-size: 35px;
+  }
+
+  /* Education */
+
+  .education > .card > h4 {
+    font-size: 35px;
+  }
+
+  .education > .card > h5 {
+    font-size: 25px;
+  }
+
+  .education > .card > h6 {
+    font-size: 20px;
+  }
+
+  .education > .card > img {
+    width: 30%;
+    margin: 20px;
+  }
+
+  #onhsImg {
+    width: 57%;
+  }
+
+  /* Work */
+  .work > .workCards > .workImgs > img {
+    width: 15vw;
+  }
+
+  #dacpaImg {
+    height: 80%;
+    width: 20vw;
+  }
+
+  .work > .workCards > .workTxts > h4 {
+    font-size: 30px;
+  }
+
+  .workTxts > h5 {
+    font-size: 25px;
+  }
+
+  .workTxts > h6 {
+    font-size: 20px;
+  }
+
+  /* Contact */
+  .contact > .card > h3 {
+    font-size: 35px;
+  }
+
+  .contact > .card > h4 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #aboutContainer {
+    height: 100%;
+  }
+
+  .aboutContent {
+    grid-template-columns: 55%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .aboutImg {
+    margin: 0;
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 3000px) and (min-width: 1990px) {
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
+  .education {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 48% 48%;
+  }
+
+  .education > .card {
+    height: calc(100vh / 3.2);
+    width: calc(100vw / 2.1);
+  }
+
+  .education > .card > img {
+    width: 15%;
+    margin: 20px;
+  }
+
+  #onhsImg {
+    width: 27%;
+  }
+
+  /* Contact */
+  .contact {
+    grid-template-columns: 48% 48%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Greetings */
+  #greetingsContainer {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /* Greetings */
+
+  .greetingsText,
+  .nameText {
+    z-index: 1;
+  }
+  /* Education */
+  #educationContainer {
+    height: 100%;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .education > .card {
+    height: calc(100vh / 3.2);
+    width: 90%;
+  }
+
+  .education > .card > img {
+    width: 15%;
+    margin: 20px;
+  }
+
+  #onhsImg {
+    width: 27%;
+  }
+
+  .education > .card:hover img {
+    transform: scale(125%);
+  }
+
+  /* Work */
+  .work > .workCards {
+    flex-direction: column;
+  }
+
+  .work > .workCards > .workImgs {
+    margin: 5% 0;
+  }
+
+  .workCards:hover .workTxts > h4 {
+    position: inherit;
+  }
+
+  #dacpaImg {
+    width: 50vw;
+  }
+
+  .work > .workCards > .workTxts {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Contact */
+  #contactContainer {
+    height: 100%;
+  }
+
+  .contact {
+    grid-template-columns: 90%;
+    margin-bottom: 5%;
+  }
+
+  .contact > .card,
+  .contact > a > .card {
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 1254px) {
+  #workContainer {
+    height: 100%;
+  }
+
+  .work > .workCards > .workImgs {
+    width: 100%;
+  }
+
+  .work > .workCards > .workImgs > img {
+    width: 20vw;
+  }
+
+  #dacpaImg {
+    height: 30%;
+    width: 25vw;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+  .education > .card {
+    height: 50vh;
+  }
+
+  .contact > .contactLinks > .card {
+    height: 40vh;
+  }
+}
+/* End of Media Queries */
