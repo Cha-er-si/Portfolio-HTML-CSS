@@ -184,6 +184,8 @@ p {
   margin: 10px 0;
   border-radius: 10px;
   transition: 0.3s ease transform;
+  text-decoration: none;
+  list-style: none;
 }
 #work .work-items:nth-child(even) {
   background-color: var(--gray);
