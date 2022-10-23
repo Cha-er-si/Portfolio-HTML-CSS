@@ -41,7 +41,7 @@ img {
   font-size: 4rem;
   font-weight: 500;
   text-transform: uppercase;
-  margin: 50px auto;
+  margin: 100px auto 50px;
   color: var(--red);
 }
 .section-title span {
