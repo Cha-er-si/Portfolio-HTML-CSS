@@ -57,6 +57,134 @@ p {
   font-weight: 500;
   margin: 10px;
 }
+
+/* Navigation Section */
+#navigation {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+}
+#navigation .navigation {
+  min-height: 10vh;
+  background-color: transparent;
+  transition: 0.3s ease background-color;
+}
+#navigation .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+#navigation .brand a {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#navigation .nav-list ul {
+  text-decoration: none;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: -1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--gray);
+  transition: 0.5s ease top;
+}
+#navigation .nav-list ul.active {
+  top: 0;
+}
+#navigation .nav-list ul li:hover {
+  width: 100%;
+  background-color: var(--light-red);
+  display: flex;
+  justify-content: center;
+}
+#navigation .nav-list ul a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+}
+#navigation .hamburger {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  transform: scale(0.8);
+  margin-right: 20px;
+}
+#navigation .hamburger .bar {
+  height: 5px;
+  width: 30px;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+  transition: 0.3s ease transform;
+}
+#navigation .hamburger .bar::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background-color: white;
+  z-index: -1;
+  bottom: 10px;
+  transition: 0.3s ease transform;
+}
+#navigation .hamburger .bar::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background-color: white;
+  z-index: -1;
+  top: 10px;
+  transition: 0.3s ease transform;
+}
+#navigation .hamburger.active .bar {
+  transition: 0.3s ease animation;
+  animation: 0.3s hamburger-active forwards;
+}
+#navigation .hamburger.active .bar::before {
+  transition: 0.3s ease transform;
+  transform: rotate(45deg) translate(7px, 7px);
+}
+#navigation .hamburger.active .bar::after {
+  transition: 0.3s ease transform;
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+@keyframes hamburger-active {
+  100% {
+    background-color: transparent;
+  }
+}
+/* End of Navigation Section */
+
 /* Hero Section */
 #hero {
   background-image: url("./images/hero-bg.jpg");
@@ -397,6 +525,25 @@ p {
   /* End of Contact Section */
 }
 @media only screen and (min-width: 1024px) {
+  /* Navigation Section */
+  #navigation .hamburger {
+    display: none;
+  }
+  #navigation .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #navigation .nav-list ul {
+    display: flex;
+    flex-direction: row;
+  }
+  #navigation .nav-list ul li a {
+    font-size: 1.5rem;
+  }
+  /* End of Navigation Section */
   /* About Section */
   #about .about-content {
     flex-direction: row;
