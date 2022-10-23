@@ -4,261 +4,295 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chaersi</title>
+    <title>Charles</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="bootstrap-darkly.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
     <script src="https://use.fontawesome.com/25c06bc126.js"></script>
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    /> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">CHARLES</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarColor02"
-            aria-controls="navbarColor02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarColor02">
-            <ul class="navbar-nav ms-sm-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#Greetings"> Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#About">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Work">Work</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#Projects">Projects</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact</a>
-              </li>
-            </ul>
+    <!-- Hero / Greetings Section -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hi, I'm</h1>
+          <h1>Prince Charles</h1>
+        </div>
+      </div>
+    </section>
+    <!-- End of Hero / Greetings Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <h1 class="section-title">About <span>Me</span></h1>
+        <div class="about-content">
+          <div class="col-left">
+            <div class="about-img">
+              <img src="./images/mypic.jpg" alt="img" />
+            </div>
+          </div>
+          <div class="col-right">
+            <h1>Junior Software Developer</h1>
+            <p>Hi, I'm Prince Charles.</p>
+            <p>I'm currently a Junior Web Developer at Bastion Inc.</p>
+            <p>
+              I like watching series and movies, and reading novels and manga.
+              I'm always curious about things.
+            </p>
+            <p>Get to know me more by scrolling down.</p>
           </div>
         </div>
-      </nav>
+      </div>
+    </section>
+    <!-- End of About Section -->
 
-      <section id="Greetings">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="headers" id="greetingsContainer">
-          <div class="greetingsText">
-            <h1>Good day!</h1>
+    <!-- Education Section -->
+    <section id="education">
+      <div class="education container">
+        <h1 class="section-title">Education</h1>
+        <div class="education-items">
+          <div class="education-logo">
+            <img src="./images/pup.png" alt="" />
           </div>
-          <div class="nameText">
-            <h1>I'm Prince Charles</h1>
-          </div>
-        </div>
-      </section>
-
-      <section id="About">
-        <div class="headers" id="aboutContainer">
-          <div class="aboutHeader">
-            <h1>About Me</h1>
-          </div>
-          <div class="aboutContent">
-            <div class="aboutImg">
-              <img src="./images/mypic.jpg" />
-            </div>
-            <div class="aboutTxt">
-              <p>
-                Hi! I'm Charles, a graduate of Bachelor of Science in Computer
-                Engineering in Polytechnic University of the Philippines.
-              </p>
-              <p>I'm always curious about things.</p>
-              <p>I like reading and watching series and movies.</p>
-              <p>
-                My goal in life as of now is to learn more knowledge and skills
-                as a Software Developer.
-              </p>
-            </div>
+          <div class="education-info">
+            <h1>Bachelor of Science in Computer Engineering</h1>
+            <p>Polytechnic University of the Philippines - Sta - Mesa Manila</p>
+            <p>2018 - 2022</p>
           </div>
         </div>
-      </section>
-
-      <section id="Education">
-        <div class="headers" id="educationContainer">
-          <div class="educationHeader">
-            <h1>Education</h1>
+        <div class="education-items">
+          <div class="education-logo">
+            <img src="./images/olfu.png" alt="" />
           </div>
-          <div class="education">
-            <div class="card">
-              <img src="https://www.pup.edu.ph/about/images/PUPLogo.png" />
-              <h4>
-                Polytechnic University of the Philippines - Sta. Mesa Manila
-              </h4>
-              <h5>Bachelor of Science in Computer Engineering</h5>
-              <h6>2018-2022</h6>
-            </div>
-            <div class="card">
-              <img src="./images/olfu.png" />
-              <h4>Our Lady of Fatima University</h4>
-              <h5>Science, Technology, Engineering, and Mathematics Track</h5>
-              <h6>2016-2018</h6>
-            </div>
-            <div class="card">
-              <img id="onhsImg" src="./images/onhs.png" />
-              <h4>Obando National High School</h4>
-              <br />
-              <h6>2012-2016</h6>
-            </div>
-            <div class="card">
-              <img id="besImg" src="./images/bes.png" />
-
-              <h4>Binuangan Elementary School</h4>
-              <br />
-              <h6>2006-2012</h6>
-            </div>
+          <div class="education-info">
+            <h1>Science Technology Engineering Mathematics</h1>
+            <p>Our Lady of Fatima Univeristy - Valenzuela Campus</p>
+            <p>2016 - 2018</p>
           </div>
         </div>
-      </section>
-
-      <section id="Work">
-        <div class="headers" id="workContainer">
-          <div class="workHeader">
-            <h1>Work Experience</h1>
+        <div class="education-items">
+          <div class="education-logo">
+            <img src="./images/onhs.png" alt="" />
           </div>
-          <div class="work">
-            <div class="workCards">
-              <div class="workImgs">
-                <img id="" src="./images/Bastion1.jpg" />
-              </div>
-              <div class="workTxts">
-                <h4>Junior Software Developer</h4>
-                <h5>Bastion Inc.</h5>
-                <h6>Current</h6>
-              </div>
-            </div>
-
-            <div class="workCards">
-              <div class="workImgs">
-                <img src="https://www.pup.edu.ph/about/images/PUPLogo.png" />
-              </div>
-              <div class="workTxts">
-                <h4>LMS Handler</h4>
-                <h5>
-                  Polytechnic University of the Philippines - Sta. Mesa Manila
-                </h5>
-                <h6>November 2021</h6>
-              </div>
-            </div>
-
-            <div class="workCards">
-              <div class="workImgs">
-                <img id="dacpaImg" src="./images/dacpa1.png" />
-              </div>
-              <div class="workTxts">
-                <h4>Odoo Web Developer</h4>
-                <h5>Dolorfino and Associates CPAs</h5>
-                <h6>August 2021 - September 2021</h6>
-              </div>
-            </div>
+          <div class="education-info">
+            <h1>Junior High School</h1>
+            <p>Obando National High School</p>
+            <p>2012 - 2016</p>
           </div>
         </div>
-      </section>
+        <div class="education-items">
+          <div class="education-logo">
+            <img src="./images/bes.png" alt="" />
+          </div>
+          <div class="education-info">
+            <h1>Grade School</h1>
+            <p>Binuangan Elementary School</p>
+            <p>2006 - 2012</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Education Section -->
 
-      <!-- <div id="Projects">
+    <!-- Work Experience -->
+    <section id="work">
+      <div class="work container">
+        <h1 class="section-title">Work <span>Experience</span></h1>
+        <ul>
+          <li class="work-items">
+            <div>
+              <div class="work-logo">
+                <img src="./images/Bastion1.jpg" alt="img" />
+              </div>
+              <div class="work-info">
+                <h1>Junior Software Developer</h1>
+                <p>Bastion Inc.</p>
+                <p>September 2022 - Present</p>
+              </div>
+            </div>
+          </li>
+          <li class="work-items">
+            <div>
+              <div class="work-logo">
+                <img src="./images/pup.png" alt="img" />
+              </div>
+              <div class="work-info">
+                <h1>LMS Handler</h1>
+                <p>Polytechnic University of the Philippines</p>
+                <p>November 2021</p>
+              </div>
+            </div>
+          </li>
+          <li class="work-items">
+            <div>
+              <div class="work-logo">
+                <img src="./images/dacpa.png" alt="img" />
+              </div>
+              <div class="work-info">
+                <h1>Odoo Web Developer</h1>
+                <p>Dolorfino and Associates, CPAs</p>
+                <p>August 2021 - September 2021</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="work-items">
+          <div class="work-logo">
+            <img src="./images/Bastion1.jpg" alt="img" />
+          </div>
+          <div class="work-info">
+            <h1>Junior Software Developer</h1>
+            <p>Bastion Inc.</p>
+            <p>September 2022 - Present</p>
+          </div>
+        </div>
+        <div class="work-items">
+          <div class="work-logo">
+            <img src="./images/pup.png" alt="img" />
+          </div>
+          <div class="work-info">
+            <h1>LMS Handler</h1>
+            <p>Polytechnic University of the Philippines</p>
+            <p>November 2021</p>
+          </div>
+        </div>
+        <div class="work-items">
+          <div class="work-logo">
+            <img src="./images/dacpa.png" alt="img" />
+          </div>
+          <div class="work-info">
+            <h1>Odoo Web Developer</h1>
+            <p>Dolorfino and Associates, CPAs</p>
+            <p>August 2021 - September 2021</p>
+          </div>
         </div> -->
+      </div>
+    </section>
+    <!-- End of Work Experience -->
 
-      <section id="Contact">
-        <div class="headers" id="contactContainer">
-          <div class="contactHeader">
-            <h1>Contact Me</h1>
-          </div>
-          <div class="contact">
-            <a class="contactLinks" href="tel:09954610386">
-              <div class="card">
-                <i class="fa fa-phone-square fa-5x" aria-hidden="true"></i>
-                <h3>Phone Number</h3>
-                <h4>09954610386</h4>
-              </div>
-            </a>
+    <!-- Project Section -->
+    <section id="projects">
+      <div class="projects container">
+        <h1 class="section-title">Projects</h1>
+        <p>These are the projects that I created or I'm a collaborator.</p>
+        <p>
+          By clicking the project, it will redirect you to the live version of
+          the website or the application file of the app/game.
+        </p>
+        <div class="project-items">
+          <a
+            href="https://drive.google.com/file/d/1hOPhtRc_aBdISWY5dr9TSTVPnRASjWwF/view?usp=sharing"
+            target="_blank"
+          >
+            <div class="project-image">
+              <img src="./images/apoh.jpg" alt="" />
+            </div>
+            <div class="project-info">
+              <h1>A Piece of Heart</h1>
+              <p>
+                A game about a girl progressing through the five stages of grief
+                because of a heart-break. This game is developed using Unity
+                Engine.
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="project-items">
+          <a href="https://ereportweb.herokuapp.com/" target="_blank">
+            <div class="project-image">
+              <img src="./images/ereportweb.png" alt="" />
+            </div>
+            <div class="project-info">
+              <h1>E-Report: Baranggay Reporting System</h1>
+              <p>
+                A website for baranggay officers and cirizens to report cases or
+                complaints. This webstie is created using MERN stack.
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="project-items">
+          <a
+            href="https://drive.google.com/file/d/15EM6XOI5eg2yiTZO6AUQw_gZpc6kZoHH/view?usp=sharing"
+            target="_blank"
+          >
+            <div class="project-image">
+              <img src="./images/iot.jpg" alt="" />
+            </div>
+            <div class="project-info">
+              <h1>IoT Based Gas Monitoring And Leakage Detection System</h1>
+              <p>
+                A system that detects gas leakage, and monitors the content of
+                your LPG tank. The system is developed using the arduino/nodemcu
+                for the device and android studio for the app.
+              </p>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End of Project Section -->
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <h1 class="section-title">Contact <span>Info</span></h1>
+        <div class="contacts">
+          <div class="contact-items">
             <a
-              class="contactLinks"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=vpcharles31@gmail.com"
+              href="https://www.google.com/maps/place/Pag-asa,+Obando,+Bulacan"
               target="_blank"
             >
-              <div class="card">
-                <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
-                <h3>Email</h3>
-                <h4>vpcharles31@gmail.com</h4>
+              <div class="icon">
+                <i class="fa fa-map fa-5x" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h1>Address</h1>
+                <p>Pag-asa Obando Bulacan</p>
               </div>
             </a>
+          </div>
+          <div class="contact-items">
+            <a href="tel:09954610386">
+              <div class="icon">
+                <i class="fa fa-phone-square fa-5x" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h1>Phone</h1>
+                <p>(+63)995-461-0386</p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-items">
             <a
-              class="contactLinks"
+              href="https://mail.google.com/mail/u/0/?fs=1&to=vpcharles31@gmail.com&tf=cm"
+              target="_blank"
+            >
+              <div class="icon">
+                <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h1>Email</h1>
+                <p>vpcharles31@gmail.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-items">
+            <a
               href="https://www.linkedin.com/in/prince-charles-velarde-19798a210"
               target="_blank"
             >
-              <div class="card">
+              <div class="icon">
                 <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
-                <h3>LinkedIn</h3>
-                <h4>Prince Charles Velarde</h4>
               </div>
-            </a>
-            <a
-              class="contactLinks"
-              href="https://www.github.com/Cha-er-si"
-              target="_blank"
-            >
-              <div class="card">
-                <i class="fa fa-github-square fa-5x" aria-hidden="true"></i>
-                <h3>Github</h3>
-                <h4>Cha-er-si</h4>
+              <div class="contact-info">
+                <h1>LinkedIn</h1>
+                <p>Prince Charles Velarde</p>
               </div>
             </a>
           </div>
         </div>
-      </section>
-
-      <hr />
-      <footer>
-        <p>&copy; 2022 CHARLES</p>
-      </footer>
-      <div class="scroll-to-top-container">
-        <a class="scroll-to-top-button" href="#"> ^ </a>
       </div>
-    </div>
+    </section>
+    <!-- End of Contact Section -->
+    <script src="app.js"></script>
   </body>
 </html>
-<script>
-  $(function () {
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > 5)
-        $(".scroll-to-top-button")
-          .addClass("scroll-button-reveal")
-          .removeClass("scroll-button-hide");
-      else if ($(window).scrollTop() == 0)
-        $(".scroll-to-top-button")
-          .removeClass("scroll-button-reveal")
-          .addClass("scroll-button-hide");
-    });
-  });
-</script>
