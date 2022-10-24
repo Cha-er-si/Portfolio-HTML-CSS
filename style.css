@@ -562,6 +562,7 @@ p {
   /* Education Section */
   #education .education-items {
     flex-direction: row;
+    margin: 20px 0;
   }
   #education .education-items .education-logo {
     width: 50%;
@@ -582,7 +583,7 @@ p {
   #work .work::before {
     content: "";
     position: absolute;
-    height: 130%;
+    height: 105%;
     max-height: fit-content;
     width: 5px;
     background-color: var(--lighter-gray);
@@ -670,11 +671,50 @@ p {
 @media only screen and (min-width: 1300px) {
   /* Work Section */
   #work .work::before {
-    height: 145%;
+    height: 65%;
+  }
+  #work .work-items div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  #work .work-items .work-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+  #work .work-items .work-info h1 {
+    margin-left: 10px;
+  }
+  #work .work-items::after {
+    right: -30px;
+  }
+  #work .work-items:nth-child(even)::after {
+    left: -55px;
+  }
+  /* End of Work Section */
+}
+@media only screen and (min-width: 1400px) {
+  /* Work Section */
+  #work .work::before {
+    height: 60%;
   }
   /* End of Work Section */
 }
 @media only screen and (min-width: 1800px) {
+  /* Education Section */
+  #education .education-items .education-info {
+    width: 35vw;
+  }
+  /* End of Education Section */
+  /* Work Section */
+  #work .work::before {
+    height: 45%;
+  }
+  /* End of Work Section */
   /* Project Section */
   #projects .project-image {
     height: 40vh;
@@ -702,13 +742,25 @@ p {
   }
   /* End of Contact Section */
 }
+@media only screen and (min-width: 1920px) and (max-height: 1150px) {
+  /* Work Section */
+  #work .work::before {
+    height: 60%;
+  }
+  /* End of Work Section */
+}
 @media only screen and (min-width: 2100px) {
+  /* Education Section */
+  #education .education-items .education-info {
+    width: 25vw;
+  }
+  /* End of Education Section */
   /* Work Section */
   #work .work {
     overflow: hidden;
   }
   #work .work::before {
-    height: 70%;
+    height: 35%;
   }
   /* End of Work Section */
   /* Contact Section */
