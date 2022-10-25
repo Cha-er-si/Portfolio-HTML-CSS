@@ -268,8 +268,6 @@ p {
   width: 100%;
   z-index: -1;
 }
-#about .col-right h1 {
-}
 /* End of About Section */
 
 /* Education Section */
@@ -760,12 +758,6 @@ p {
   }
   /* End of Work Section */
   /* Contact Section */
-  #contact .contacts {
-  }
-  #contact .contact-items {
-  }
-  #contact .contact-items a {
-  }
 
   /* End of Contact Section */
 }
