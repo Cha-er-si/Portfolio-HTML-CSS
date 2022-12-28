@@ -752,6 +752,18 @@ p {
   }
   /* End of Work Section */
 }
+@media only screen and (min-width: 1557px) and (max-width: 1799px) {
+  /* Contacts Section */
+  #contact .contact .contacts {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    grid-template-columns: 50% 50%;
+    grid-auto-columns: 50%;
+  }
+  /* End of Contacts Section */
+}
 @media only screen and (min-width: 1800px) {
   /* Education Section */
   #education .education-items .education-info {

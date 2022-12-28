@@ -54,7 +54,7 @@ const observer = new IntersectionObserver(
       // }
     });
   },
-  { rootMargin: "50px" }
+  { threshold: 1 }
 );
 
 const hiddenElements = document.querySelectorAll(".hidden");
