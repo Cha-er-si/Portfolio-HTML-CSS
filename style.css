@@ -308,6 +308,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 1s all;
 }
 #education .education-items .education-logo {
   width: 20vw;
@@ -320,6 +321,14 @@ p {
 }
 #education .education-items:hover .education-logo {
   transform: scale(1.1);
+}
+.education-hidden {
+  transform: translateY(100%);
+  opacity: 0;
+}
+.education-show {
+  transform: translateY(0%);
+  opacity: 1;
 }
 /* End of Education Section */
 
@@ -498,6 +507,9 @@ p {
 }
 #footer .social-items:hover {
   transform: scale(1.1);
+}
+#footer > .footer > p {
+  text-align: center;
 }
 /* End of Footer Section */
 
@@ -783,7 +795,7 @@ p {
 @media only screen and (min-width: 1920px) and (max-height: 1150px) {
   /* Work Section */
   #work .work ul::before {
-    height: calc((100% / 4) * 2.3);
+    height: calc((100% / 4) * 2.2);
   }
   /* End of Work Section */
 }
