@@ -91,3 +91,8 @@ hiddenElements.forEach((elements) => {
 // const heroHidden = document.querySelectorAll(".hero-hidden");
 
 // document.addEventListener("scroll", console.log(observer));
+
+//Copyright Year
+const copyrightYear = document.querySelector("#copyright-year");
+const currentYear = new Date().getFullYear();
+copyrightYear.innerHTML = currentYear;
