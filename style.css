@@ -52,11 +52,18 @@
   --red: #333533;
   --white-bg: #fefcff; */
 
-  --lighter-gray: #cbdf90;
+  /* --lighter-gray: #cbdf90;
   --light-gray: #8fad88;
   --gray: #7f9c96;
   --light-red: #4d7c8a;
   --red: #1b4079;
+  --white-bg: #fefcff; */
+
+  --lighter-gray: #cfd6ea;
+  --light-gray: #b0b2b8;
+  --gray: #7d7e75;
+  --light-red: #4f5d2f;
+  --red: #423629;
   --white-bg: #fefcff;
 }
 
