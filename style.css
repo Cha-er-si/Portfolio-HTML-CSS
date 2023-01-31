@@ -402,6 +402,9 @@ p {
   border: 2px solid var(--gray);
   overflow: hidden;
 }
+#projects .project-image.project-graphics-image {
+  border: 2px solid var(--red);
+}
 #projects .project-image img {
   height: 100%;
   width: 100%;
@@ -419,6 +422,13 @@ p {
   text-align: center;
   max-width: 1000px;
   max-height: 1000px;
+}
+#projects .project-info.project-graphics-info {
+  background-color: var(--red);
+}
+#projects .project-graphics-header {
+  margin-top: 50px;
+  text-align: center;
 }
 /* End of Project Section */
 
