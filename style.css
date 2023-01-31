@@ -3,11 +3,60 @@
 /* Ends Here */
 
 :root {
-  --lighter-gray: #c9cebd;
+  /* --lighter-gray: #c9cebd;
   --light-gray: #b2bcaa;
   --gray: #838e83;
   --light-red: #6c6061;
   --red: #64403e;
+  --white-bg: #fefcff; */
+
+  /* --lighter-gray: #c9e4ca;
+  --light-gray: #87bba2;
+  --gray: #55828b;
+  --light-red: #3b6064;
+  --red: #364958;
+  --white-bg: #fefcff; */
+
+  /* --lighter-gray: #f4f4f9;
+  --light-gray: #b8dbd9;
+  --gray: #586f7c;
+  --light-red: #2f4550;
+  --red: #000000;
+  --white-bg: #fefcff; */
+
+  /* --lighter-gray: #99ddc8;
+  --light-gray: #95bf74;
+  --gray: #659b5e;
+  --light-red: #556f44;
+  --red: #283f3b;
+  --white-bg: #fefcff; */
+
+  /* --lighter-gray: #e0e9b1;
+  --light-gray: #c4f7a1;
+  --gray: #c8d96f;
+  --light-red: #a5b452;
+  --red: #5c573e;
+  --white-bg: #fefcff; */
+
+  /* --lighter-gray: #eef0f2;
+  --light-gray: #c6c7c4;
+  --gray: #a2999e;
+  --light-red: #846a6a;
+  --red: #353b3c;
+  --white-bg: #fefcff; */
+
+  /* --lighter-gray: #cfdbd5;
+  --light-gray: #e8eddf;
+  --gray: #f5cb5c;
+  --light-red: #242423;
+  --red: #333533;
+  --white-bg: #fefcff; */
+
+  --lighter-gray: #cbdf90;
+  --light-gray: #8fad88;
+  --gray: #7f9c96;
+  --light-red: #4d7c8a;
+  --red: #1b4079;
   --white-bg: #fefcff;
 }
 
