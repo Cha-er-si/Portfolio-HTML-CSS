@@ -402,7 +402,7 @@ p {
   border: 2px solid var(--gray);
   overflow: hidden;
 }
-#projects .project-image.project-graphics-image {
+#projects .project-image.project-design-image {
   border: 2px solid var(--red);
 }
 #projects .project-image img {
@@ -423,10 +423,10 @@ p {
   max-width: 1000px;
   max-height: 1000px;
 }
-#projects .project-info.project-graphics-info {
+#projects .project-info.project-design-info {
   background-color: var(--red);
 }
-#projects .project-graphics-header {
+#projects .project-design-header {
   margin-top: 50px;
   text-align: center;
 }
