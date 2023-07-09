@@ -842,7 +842,7 @@ p {
 
   /* Work Section */
   #work .work ul::before {
-    height: 53%;
+    height: calc((100% / 2.7) * 1.8);
     left: 50vw;
   }
   /* End of Work Section */
@@ -890,8 +890,8 @@ p {
   /* End of Education Section */
   /* Work Section */
   #work .work ul::before {
-    height: 50%;
-    left: 50.4vw;
+    height: 53%;
+    left: 50vw;
   }
   /* End of Work Section */
   /* Contact Section */
