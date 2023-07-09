@@ -666,6 +666,7 @@ p {
     margin-left: 10px;
   }
   /* End of About Section */
+
   /* Education Section */
   #education .education-items {
     flex-direction: row;
@@ -690,7 +691,7 @@ p {
   #work .work ul::before {
     content: "";
     position: absolute;
-    height: calc((100% / 2.75) * 3.7);
+    height: calc((100% / 2.35) * 3.7);
     padding: 0;
     max-height: fit-content;
     width: 5px;
@@ -785,7 +786,7 @@ p {
 @media only screen and (min-width: 1300px) and (max-width: 1370px) {
   /* Work Section */
   #work .work ul::before {
-    height: calc((100% / 2.76) * 3.7);
+    height: calc((100% / 3.5) * 3.7);
     left: 50.7vw;
   }
   /* End Work Section */
@@ -793,7 +794,7 @@ p {
 @media only screen and (min-width: 1400px) {
   /* Work Section */
   #work .work ul::before {
-    height: calc((100% / 2.6) * 2.5);
+    height: calc((100% / 2.8) * 2.5);
     left: 50.6vw;
   }
   #work .work-items div {
@@ -841,7 +842,7 @@ p {
 
   /* Work Section */
   #work .work ul::before {
-    height: calc((100% / 1.9) * 1.8);
+    height: calc((100% / 2.75) * 1.8);
     left: 50.5vw;
   }
   /* End of Work Section */
@@ -876,7 +877,7 @@ p {
 @media only screen and (min-width: 1920px) and (max-height: 1150px) {
   /* Work Section */
   #work .work ul::before {
-    height: calc((100% / 2.69) * 2.2);
+    height: calc((100% / 2.69) * 1.8);
     left: 50vw;
   }
   /* End of Work Section */
@@ -889,8 +890,8 @@ p {
   /* End of Education Section */
   /* Work Section */
   #work .work ul::before {
-    height: 84%;
-    left: 50.45vw;
+    height: 50%;
+    left: 50.4vw;
   }
   /* End of Work Section */
   /* Contact Section */
