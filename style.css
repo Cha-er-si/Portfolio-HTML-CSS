@@ -819,8 +819,8 @@ section#footer {
 
   /* Contact Section */
   #contact .section-title {
+    margin-top: 0;
     margin-right: auto;
-    margin-left: 20%;
   }
 
   #contact .contacts {
@@ -870,12 +870,6 @@ section#footer {
     margin-inline: 10%;
   }
   /* End of About Section */
-
-  /* Contact Section */
-  #contact .section-title {
-    margin-left: 27%;
-  }
-  /* End of Contact Section */
 }
 
 @media only screen and (min-width: 1440px) {
@@ -891,12 +885,6 @@ section#footer {
     margin-inline: 10%;
   }
   /* End of About Section */
-
-  /* Contact Section */
-  #contact .section-title {
-    margin-left: 28%;
-  }
-  /* End of Contact Section */
 }
 
 @media only screen and (min-width: 1680px) {
@@ -911,12 +899,6 @@ section#footer {
     margin-inline: 15%;
   }
   /* End of About Section */
-
-  /* Contact Section */
-  #contact .section-title {
-    margin-left: 31%;
-  }
-  /* End of Contact Section */
 }
 
 @media only screen and (min-width: 1920px) {
@@ -925,12 +907,6 @@ section#footer {
     width: 30%;
   }
   /* End of Hero Section */
-
-  /* Contact Section */
-  #contact .section-title {
-    margin-left: 33%;
-  }
-  /* End of Contact Section */
 }
 
 @media only screen and (min-width: 2560px) {
@@ -939,17 +915,5 @@ section#footer {
     margin-inline: 20%;
   }
   /* End of About Section */
-
-  /* Contact Section */
-  #contact .section-title {
-    margin-left: 33%;
-  }
-  /* End of Contact Section */
-
-  /* Contact Section */
-  #contact .section-title {
-    margin-left: 38%;
-  }
-  /* End of Contact Section */
 }
 /* Media Queries */
