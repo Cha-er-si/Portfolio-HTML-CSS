@@ -11,16 +11,18 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   mobile_menu.classList.toggle("active");
 });
+
 menu_item.forEach((item) => {
   item.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     mobile_menu.classList.toggle("active");
   });
 });
+
 document.addEventListener("scroll", () => {
   var scroll_position = window.scrollY;
   if (scroll_position > 50) {
-    header.style.backgroundColor = "var(--red)";
+    header.style.backgroundColor = "var(--primary)";
   } else {
     header.style.backgroundColor = "transparent";
   }
