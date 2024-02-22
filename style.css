@@ -619,7 +619,11 @@ section#footer {
 /* Footer Section */
 #footer .footer {
   padding: 5%;
-  background: linear-gradient(254deg, #ff312e -51.46%, #515052 129.71%);
+  background: linear-gradient(
+    254deg,
+    var(--primary) -51.46%,
+    var(--secondary) 129.71%
+  );
 }
 
 #footer .footer h1 {
