@@ -252,7 +252,7 @@ section#footer {
 }
 
 #navigation .nav-list ul .nav-item a {
-  font-size: clamp(1.5rem, 1.429rem + 0.357vw, 2rem);
+  font-size: clamp(2rem, 1.761rem + 1.196vw, 2.5rem);
 }
 
 #navigation .hamburger {
@@ -663,9 +663,9 @@ section#footer {
     flex-direction: row;
   }
 
-  #navigation .nav-list ul li a {
-    font-size: 1.5rem;
-    margin-inline: 1rem;
+  #navigation .nav-list ul .nav-item a {
+    font-size: clamp(1.1rem, 0.659rem + 0.713vw, 1.8rem);
+    margin-inline: clamp(1rem, 0.685rem + 0.51vw, 1.5rem);
   }
   /* End of Navigation Section */
 
