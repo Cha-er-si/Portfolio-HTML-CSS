@@ -184,7 +184,7 @@ section#footer {
 }
 
 #navigation .navigation {
-  min-height: 10vh;
+  min-height: 7rem;
   background-color: transparent;
   transition: 0.3s ease background-color;
 }
@@ -213,7 +213,7 @@ section#footer {
   text-decoration: none;
   position: absolute;
   right: 0;
-  top: -100rem;
+  top: -100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,8 +388,8 @@ section#footer {
 /* Hero Section */
 #hero {
   overflow: hidden;
-  height: 100vh;
-  margin-top: 10vh;
+  height: 100%;
+  margin-top: 7rem;
 }
 
 #hero .hero {
@@ -435,6 +435,7 @@ section#footer {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
 #hero .hero-hidden {
