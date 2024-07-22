@@ -6,7 +6,7 @@
   --primary: #ff312e;
   --secondary: #333138;
   --tertiary: #515052;
-  --black: #000103;
+  --black: #252525;
   --white: #fffffa;
 }
 
@@ -274,7 +274,7 @@ section#footer {
   height: 0.5rem;
   width: 3rem;
   position: relative;
-  background-color: white;
+  background-color: var(--white);
   z-index: -1;
   transition: 0.3s ease transform;
 }
@@ -284,7 +284,7 @@ section#footer {
   position: absolute;
   height: 0.5rem;
   width: 3rem;
-  background-color: white;
+  background-color: var(--white);
   z-index: -1;
   bottom: 1rem;
   transition: 0.3s ease transform;
@@ -295,7 +295,7 @@ section#footer {
   position: absolute;
   height: 0.5rem;
   width: 3rem;
-  background-color: white;
+  background-color: var(--white);
   z-index: -1;
   top: 1rem;
   transition: 0.3s ease transform;
@@ -518,7 +518,11 @@ section#footer {
 /* Work Section */
 #work .work-items {
   width: 90%;
-  background: linear-gradient(270deg, #ff312e 20%, #515052 100%);
+  background: linear-gradient(
+    270deg,
+    var(--primary) 20%,
+    var(--secondary) 100%
+  );
   overflow: hidden;
   padding: 10%;
   margin: 10% auto;
@@ -548,7 +552,11 @@ section#footer {
 /* Projects Section */
 #projects .project-items {
   width: 90%;
-  background: linear-gradient(254deg, #ff312e -51.46%, #515052 129.71%);
+  background: linear-gradient(
+    254deg,
+    var(--primary) -51.46%,
+    var(--tertiary) 129.71%
+  );
   overflow: hidden;
   padding: 10%;
   margin: 10% auto;
@@ -557,7 +565,7 @@ section#footer {
 }
 
 #projects .project-items .project-image {
-  border: 1rem solid var(--3-Secondary, #333138);
+  border: 1rem solid var(--secondary);
   width: 90%;
   height: 25rem;
   overflow: hidden;
