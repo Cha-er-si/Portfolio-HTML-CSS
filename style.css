@@ -89,6 +89,7 @@ h1.title {
   justify-content: center;
 
   z-index: 1;
+  cursor: pointer;
 }
 
 #navigation .nav-list .hamburger .bar {
@@ -158,6 +159,7 @@ h1.title {
 }
 
 #navigation .nav-list ul .nav-item {
+  position: relative;
   font-size: clamp(1.75rem, 1.392rem + 1.791vw, 2.5rem);
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -211,6 +213,30 @@ h1.title {
       display: flex;
       opacity: 1;
       width: 100vw;
+    }
+  }
+
+  #navigation .nav-list .nav-item a {
+    transition: 0.5s ease-in-out all;
+  }
+
+  #navigation .nav-list .nav-item a:hover::before {
+    content: "";
+    width: 0.25rem;
+    visibility: hidden;
+    height: 0%;
+    position: absolute;
+    background-color: var(--blue);
+    top: 0;
+    right: -1.5%;
+    transition: 0.3s linear animation;
+    animation: 0.2s height-full linear forwards;
+  }
+
+  @keyframes height-full {
+    to {
+      visibility: visible;
+      height: 100%;
     }
   }
 }
