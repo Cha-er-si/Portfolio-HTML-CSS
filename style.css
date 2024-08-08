@@ -31,6 +31,16 @@ ol {
   list-style: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--platinum);
+}
+
 section:not(#navigation) {
   display: none;
 }
@@ -41,13 +51,21 @@ section:not(#navigation).active {
 }
 
 section:not(#navigation).active > .container {
-  height: 90vh;
+  height: 85vh;
+}
+
+h1.title {
+  font-size: clamp(3.5rem, 2.929rem + 2.857vw, 7.5rem);
+  -webkit-text-stroke: 0.1rem var(--platinum);
+  color: transparent;
+  text-align: center;
 }
 
 /* Navigation */
 #navigation {
   width: 100vw;
   padding: 1rem;
+  position: sticky;
 }
 
 #navigation .nav-bar {
@@ -291,6 +309,51 @@ section:not(#navigation).active > .container {
   }
 }
 
+/* About */
+#about .about {
+  margin-top: 1rem;
+}
+
+#about .about .left,
+#about .about .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #about .about .left .title {
+    transition: 0.3s linear animation;
+    animation: 2s 1s add-platinum-color linear infinite,
+      0.5s text-slide-in linear forwards;
+  }
+
+  @keyframes text-slide-in {
+    from {
+      transform: translateX(-5%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+#about .about .left img {
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 30rem;
+}
+
+#about .about .right p {
+  text-align: center;
+  width: 90%;
+  margin-bottom: clamp(0.5rem, 0.286rem + 1.071vw, 2rem);
+  font-size: clamp(1rem, 0.786rem + 1.071vw, 2.5rem);
+  line-height: clamp(1.5rem, 1.214rem + 1.429vw, 3.5rem);
+}
+
 /* Media Queries */
 @media only screen and (min-width: 990px) {
   /* Navigation */
@@ -341,5 +404,40 @@ section:not(#navigation).active > .container {
         width: 50vw;
       }
     }
+  }
+
+  /* About */
+  #about .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #about .about .left,
+  #about .about .right {
+    width: 45%;
+  }
+
+  #about .about .left {
+    flex-direction: row-reverse;
+  }
+
+  #about .about .left .title {
+    rotate: 90deg;
+    display: inline-block;
+    height: fit-content;
+    width: 15%;
+    display: flex;
+    margin-bottom: auto;
+    position: relative;
+    margin-top: 10vh;
+  }
+
+  #about .about .right {
+    align-items: flex-start;
+  }
+
+  #about .about .right p {
+    text-align: left;
   }
 }
