@@ -18,10 +18,10 @@
             <a href="#" style="display: flex; align-items: center">CHAERSI</a>
           </div>
           <div class="nav-list">
-            <div class="hamburger active">
+            <div class="hamburger" onclick="toggleMenu()">
               <div class="bar"></div>
             </div>
-            <ul class="active">
+            <ul class="">
               <li class="nav-item"><a href="#">Home</a></li>
               <li class="nav-item"><a href="#about">About</a></li>
               <li class="nav-item"><a href="#experience">Experience</a></li>
@@ -35,13 +35,64 @@
 
     <!-- Hero / Greetings Section -->
     <section id="hero">
-      <div class="hero container"></div>
+      <div class="hero container">
+        <h1><span>PRINCE</span> <span>CHARLES</span> <span>VELARDE</span></h1>
+        <h4>JUNIOR SOFTWARE DEVELOPER</h4>
+        <div class="contacts">
+          <a class="contact-item" href="tel:+639954610386" target="_blank">
+            <img src="./images/home/phone.png" alt="Phone" />
+            <p class="contact-detail">(+63) 995-461-0386</p>
+          </a>
+          <a
+            class="contact-item"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=princecharles.velarde@gmail.com"
+            target="_blank"
+          >
+            <img src="./images/home/email.png" alt="Email" />
+            <p class="contact-detail">princecharles.velarde@gmail.com</p>
+          </a>
+          <a
+            class="contact-item"
+            href="https://github.com/Cha-er-si"
+            target="_blank"
+          >
+            <img src="./images/home/github.png" alt="Github" />
+            <p class="contact-detail">Cha-er-si</p>
+          </a>
+          <a
+            class="contact-item"
+            href="https://www.linkedin.com/in/prince-charles-velarde-19798a210"
+            target="_blank"
+          >
+            <img src="./images/home/linkedin.png" alt="LinkedIn" />
+            <p class="contact-detail">Prince Charles Velarde</p>
+          </a>
+        </div>
+      </div>
     </section>
     <!-- End of Hero / Greetings Section -->
 
     <!-- About Section -->
-    <section id="about">
-      <div class="about container"></div>
+    <section id="about" class="active">
+      <div class="about container">
+        <div class="left">
+          <h1>ABOUT</h1>
+          <img src="./images/about/mypic.jpg" alt="My Photo" />
+        </div>
+        <div class="right">
+          <p>
+            I’m a Junior Software Developer currently at Bastion Inc. , handling
+            Web and Mobile Systems
+          </p>
+          <p>
+            I like both coding and designing, I still have a lot to learn with
+            coding and designing but I’ll do my best!
+          </p>
+          <p>
+            After work you may find me in the corner reading novels or manga.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- End of About Section -->
 
@@ -70,10 +121,10 @@
     <!-- End of Contact Section -->
 
     <!-- Footer Section -->
-    <section id="footer">
+    <!-- <section id="footer">
       <div class="footer"></div>
-    </section>
+    </section> -->
     <!-- End of Footer Section -->
-    <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

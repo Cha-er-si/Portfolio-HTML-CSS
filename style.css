@@ -31,6 +31,19 @@ ol {
   list-style: none;
 }
 
+section:not(#navigation) {
+  display: none;
+}
+
+section:not(#navigation).active {
+  display: inherit;
+  overflow-x: hidden;
+}
+
+section:not(#navigation).active > .container {
+  height: 90vh;
+}
+
 /* Navigation */
 #navigation {
   width: 100vw;
@@ -71,7 +84,7 @@ ol {
   position: relative;
   background-color: var(--platinum);
   z-index: -1;
-  transition: 0.3s ease transform;
+  transition: none;
 }
 
 #navigation .nav-list .hamburger .bar::before {
@@ -82,7 +95,6 @@ ol {
   background-color: var(--platinum);
   bottom: 0.5rem;
   right: 0;
-  transition: 0.3s ease transform;
 }
 
 #navigation .nav-list .hamburger .bar::after {
@@ -93,31 +105,23 @@ ol {
   background-color: var(--platinum);
   top: 0.5rem;
   right: 0;
-  transition: 0.3s ease transform;
 }
 
 #navigation .nav-list .hamburger.active .bar {
-  transition: 0.3s ease animation;
-  animation: 0.3s hamburger-active linear forwards;
+  background-color: transparent;
 }
 
 #navigation .nav-list .hamburger.active .bar::before {
   background-color: var(--blue);
   width: 2rem;
-  transition: 0.3s ease transform;
   transform: rotate(45deg) translate(0rem, 0.4rem);
+  transition: none;
 }
 
 #navigation .nav-list .hamburger.active .bar::after {
   background-color: var(--blue);
-  transition: 0.3s ease transform;
+  transition: none;
   transform: rotate(-45deg) translate(0.3rem, -0.7rem);
-}
-
-@keyframes hamburger-active {
-  to {
-    background-color: transparent;
-  }
 }
 
 #navigation .nav-list ul {
@@ -126,7 +130,6 @@ ol {
   right: 0;
 
   height: 100vh;
-  width: 0vw;
   background-color: var(--gray);
 
   flex-direction: column;
@@ -145,45 +148,198 @@ ol {
 
 #navigation .nav-list ul.active {
   display: flex;
-
-  animation: 0.2s navigation-slide-in-full linear forwards;
+  opacity: 1;
+  width: 100vw;
 }
 
-@keyframes navigation-slide-in-full {
-  from {
-    display: flex;
-    opacity: 0;
+@media (prefers-reduced-motion: no-preference) {
+  #navigation .nav-list .hamburger.active .bar {
+    transition: 0.3s linear animation;
+    animation: 0.3s hamburger-active linear forwards;
   }
 
-  to {
-    opacity: 1;
-    width: 100vw;
+  @keyframes hamburger-active {
+    to {
+      background-color: transparent;
+    }
   }
-}
 
-@media only screen and (min-width: 990px) {
-  /* Navigation */
+  #navigation .nav-list .hamburger.active .bar::before {
+    background-color: var(--blue);
+    width: 2rem;
+    transition: 0.3s linear transform;
+    transform: rotate(45deg) translate(0rem, 0.4rem);
+  }
 
-  #navigation .nav-list ul {
-    width: 0vw;
-    align-items: flex-end;
-    padding-right: 1rem;
+  #navigation .nav-list .hamburger.active .bar::after {
+    background-color: var(--blue);
+    transition: 0.3s linear transform;
+    transform: rotate(-45deg) translate(0.3rem, -0.7rem);
   }
 
   #navigation .nav-list ul.active {
     display: flex;
-    animation: 0.3s navigation-slide-in-half linear forwards;
+    transition: 0.3s linear animation;
+    animation: 0.2s navigation-slide-in-full linear forwards;
   }
 
-  @keyframes navigation-slide-in-half {
+  @keyframes navigation-slide-in-full {
     from {
-      display: flex;
       opacity: 0;
+      width: 90vw;
     }
 
     to {
+      display: flex;
       opacity: 1;
-      width: 50vw;
+      width: 100vw;
+    }
+  }
+}
+
+/* Hero */
+#hero .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .hero h1,
+#hero .hero h4 {
+  text-align: center;
+  color: var(--platinum);
+}
+
+#hero .hero h1 {
+  font-size: clamp(3.5rem, 2.929rem + 2.857vw, 7.5rem);
+  -webkit-text-stroke: 0.1rem var(--platinum);
+  color: transparent;
+  text-align: center;
+  width: clamp(100%, 108.571% + -42.857vw, 40%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #hero .hero h1 span {
+    transition: 0.3s linear animation;
+    animation: 4s add-platinum-color linear infinite;
+    animation-delay: 1s;
+  }
+
+  #hero .hero h1 span:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  #hero .hero h1 span:nth-child(3) {
+    animation-delay: 3s;
+  }
+
+  @keyframes add-platinum-color {
+    0%,
+    100% {
+      color: var(--white);
+    }
+
+    25%,
+    75% {
+      color: transparent;
+    }
+  }
+}
+
+#hero .hero h4 {
+  font-size: clamp(1.25rem, 1.107rem + 0.714vw, 2.25rem);
+  margin-top: 1rem;
+}
+
+#hero .contacts {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#hero .contacts .contact-item {
+  display: flex;
+  align-items: center;
+}
+
+#hero .contacts .contact-item img {
+  width: clamp(1.25rem, 1.143rem + 0.536vw, 2rem);
+  margin-right: 0.5rem;
+}
+
+#hero .contacts .contact-item .contact-detail {
+  color: var(--platinum);
+  overflow: hidden;
+  font-size: clamp(1rem, 0.964rem + 0.179vw, 1.25rem);
+  font-weight: bold;
+  margin-right: 0.5rem;
+  width: 0rem;
+  visibility: hidden;
+  transition: 0.5s ease-in-out all;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #hero .contacts .contact-item:hover .contact-detail {
+    visibility: visible;
+    width: 100%;
+  }
+
+  #hero .contacts .contact-item:focus .contact-detail,
+  #hero .contacts .contact-item:active .contact-detail {
+    visibility: hidden;
+  }
+}
+
+/* Media Queries */
+@media only screen and (min-width: 990px) {
+  /* Navigation */
+  #navigation .nav-list ul.active {
+    display: flex;
+    opacity: 1;
+    width: 50vw;
+  }
+
+  #navigation .nav-list ul .nav-item {
+    width: 80%;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #navigation .nav-list ul.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 50vw;
+    background-color: #36363690;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    #navigation .nav-list ul {
+      width: 0vw;
+      align-items: flex-end;
+      padding-right: 1rem;
+    }
+
+    #navigation .nav-list ul.active {
+      display: flex;
+      animation: 0.3s navigation-slide-in-half linear forwards;
+    }
+
+    @keyframes navigation-slide-in-half {
+      from {
+        opacity: 0;
+        width: 40vw;
+      }
+
+      to {
+        display: flex;
+        opacity: 1;
+        width: 50vw;
+      }
     }
   }
 }
