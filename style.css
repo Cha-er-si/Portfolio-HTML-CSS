@@ -59,6 +59,7 @@ h1.title {
   -webkit-text-stroke: 0.1rem var(--platinum);
   color: transparent;
   text-align: center;
+  z-index: -1;
 }
 
 /* Navigation */
@@ -380,6 +381,116 @@ h1.title {
   line-height: clamp(1.5rem, 1.214rem + 1.429vw, 3.5rem);
 }
 
+/* Experience */
+#experience .experience {
+  z-index: -1;
+}
+
+#experience .experience .title {
+  font-size: clamp(2.5rem, 1.857rem + 3.214vw, 7rem);
+}
+
+#experience .experience .experience-details {
+  margin-top: 2rem;
+}
+
+#experience .experience .experience-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#experience .experience .experience-items .logo {
+  width: clamp(5rem, 4.522rem + 2.392vw, 6rem);
+  height: clamp(5rem, 4.522rem + 2.392vw, 6rem);
+  border-radius: clamp(5rem, 4.522rem + 2.392vw, 6rem);
+  padding: 1rem;
+  overflow: hidden;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+#experience .experience .experience-items .logo img {
+  height: clamp(4.5rem, 4.022rem + 2.392vw, 5.5rem);
+  width: clamp(4.5rem, 4.022rem + 2.392vw, 5.5rem);
+  object-fit: contain;
+  border-radius: clamp(4.5rem, 4.022rem + 2.392vw, 5.5rem);
+}
+
+#experience .experience .experience-items .details {
+  margin-top: 1rem;
+}
+
+#experience .experience .experience-items .details p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+#experience .experience .experience-items .details .date {
+  font-size: clamp(0.75rem, 0.714rem + 0.179vw, 1rem);
+}
+
+#experience .experience .experience-items .details .job-title {
+  font-size: clamp(1rem, 0.964rem + 0.179vw, 1.25rem);
+  font-weight: bold;
+}
+
+#experience .experience .experience-items .details .company-name {
+  font-size: clamp(1rem, 0.964rem + 0.179vw, 1.25rem);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #experience .experience .title {
+    transition: 0.3s linear animation;
+    animation: 2s 1s add-platinum-color linear infinite,
+      0.5s text-slide-in-right linear forwards;
+    z-index: -1;
+  }
+
+  @keyframes text-slide-in-right {
+    from {
+      transform: translateX(5%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  #experience .experience .experience-items:nth-child(even) .logo {
+    transition: 0.5s linear animation;
+    animation: 1s roll-right linear forwards;
+  }
+
+  @keyframes roll-right {
+    from {
+      transform: translateX(-50%) rotate(-180deg);
+    }
+    to {
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+
+  #experience .experience .experience-items:nth-child(odd) .logo {
+    transition: 0.5s linear animation;
+    animation: 1s roll-left linear forwards;
+  }
+
+  @keyframes roll-left {
+    from {
+      transform: translateX(50%) rotate(180deg);
+    }
+    to {
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+}
+
 /* Media Queries */
 @media only screen and (min-width: 990px) {
   /* Navigation */
@@ -396,7 +507,7 @@ h1.title {
     margin-left: auto;
   }
 
-  #navigation .nav-list ul.active::before {
+  #navigation .nav-list ul.active::after {
     content: "";
     position: absolute;
     top: 0;
@@ -465,5 +576,114 @@ h1.title {
 
   #about .about .right p {
     text-align: left;
+  }
+
+  /* Experience */
+  #experience .experience {
+    position: relative;
+  }
+
+  #experience .experience .title {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: clamp(1rem, -1.522rem + 4.076vw, 5rem);
+    right: clamp(1rem, -1.522rem + 4.076vw, 5rem);
+    rotate: -90deg;
+    transform: translate(-50%, -50%);
+  }
+
+  #experience .experience .experience-details {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: clamp(50rem, 49.054rem + 1.529vw, 51.5rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #experience .experience .experience-details::before {
+    content: "";
+    position: absolute;
+    width: clamp(0.25rem, 0.092rem + 0.255vw, 0.5rem);
+    height: 47.5vh;
+    background-color: var(--white);
+    top: clamp(45%, 41.847% + 5.096vw, 50%);
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+  #experience .experience .experience-items {
+    width: clamp(29rem, 28.369rem + 1.019vw, 30rem);
+    flex-direction: row;
+  }
+
+  #experience .experience .experience-items:nth-child(odd) {
+    margin-left: auto;
+  }
+
+  #experience .experience .experience-items:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-right: auto;
+  }
+
+  #experience .experience .experience-items:nth-child(even) .logo {
+    margin-left: clamp(1rem, 0.685rem + 0.51vw, 1.5rem);
+  }
+
+  #experience .experience .experience-items:nth-child(even) .details p {
+    text-align: right;
+  }
+
+  #experience .experience .experience-items .logo {
+    margin-right: clamp(1rem, 0.685rem + 0.51vw, 1.5rem);
+    width: clamp(3.5rem, 2.239rem + 2.038vw, 5.5rem);
+    height: clamp(3.5rem, 2.239rem + 2.038vw, 5.5rem);
+    border-radius: clamp(3.5rem, 2.239rem + 2.038vw, 5.5rem);
+    margin-bottom: auto;
+  }
+
+  #experience .experience .experience-items .logo img {
+    height: clamp(2.5rem, 1.239rem + 2.038vw, 4.5rem);
+    width: clamp(2.5rem, 1.239rem + 2.038vw, 4.5rem);
+    object-fit: contain;
+    border-radius: clamp(2.5rem, 1.239rem + 2.038vw, 4.5rem);
+  }
+
+  #experience .experience .experience-items .details {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  #experience .experience .experience-items .details p {
+    text-align: left;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    #experience .experience .experience-items:nth-child(even) .logo {
+      transition: 0.5s linear animation;
+      animation: 1s bounce-top linear forwards;
+    }
+
+    #experience .experience .experience-items:nth-child(odd) .logo {
+      transition: 0.5s linear animation;
+      animation: 1s bounce-top linear forwards;
+    }
+
+    @keyframes bounce-top {
+      from {
+        transform: translateY(20%);
+      }
+      50% {
+        transform: translateY(-5%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
   }
 }
