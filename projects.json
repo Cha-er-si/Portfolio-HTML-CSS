@@ -1,0 +1,181 @@
+{
+  "personal": [
+    {
+      "title": "Philippine ID Validation",
+      "description": "A validation package for some philippine IDs",
+      "skills": ["JavaScript"]
+    },
+    {
+      "title": "DeliverEat",
+      "description": "An Ionic Progressive Web App for food deliveries",
+      "skills": [
+        "Ionic",
+        "Angular",
+        "PWA",
+        "Cordova",
+        "HTML",
+        "SCSS",
+        "TypeScript",
+        "MongoDB",
+        "ExpressJS"
+      ]
+    },
+    {
+      "title": "Chaersi Cordova Barcode Scanner",
+      "description": "A custom cordova plugin for android that uses MIT google package for Barcode or QR Decoder and Scanner",
+      "skills": ["Gulp", "Java", "Plugman", "Cordova"]
+    },
+    {
+      "title": "Authentication / Authorization",
+      "description": "A research or learning project for ASP.Net for login and hashing of credentials",
+      "skills": [".Net Framework", "C#", "SQLite", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Ionic MEAN",
+      "description": "A research or learning project for Ionic Framework and MEAN stack",
+      "skills": [
+        "Ionic",
+        "Angular",
+        "HTML",
+        "SCSS",
+        "TypeScript",
+        "MongoDB",
+        "ExpressJS"
+      ]
+    },
+    {
+      "title": "Store Manager",
+      "description": "A research or learning project for Ionic Framework with a behavior like an e-commerce or point of sale system with some inventory and QR tag generation system",
+      "skills": ["Ionic", "Angular", "HTML", "SCSS", "TypeScript"]
+    },
+    {
+      "title": "Ionic IoT Gas App",
+      "description": "A research or thesis project for Ionic Framework, migrating the thesis mobile application to Ionic Framework environment",
+      "skills": ["Ionic", "Angular", "HTML", "SCSS", "TypeScript"]
+    },
+    {
+      "title": "IoT Based Gas Monitoring and Leakage Detection System",
+      "description": "A mobile application monitoring the level of gas leakage and the gas tank's content.",
+      "skills": ["Arduino", "Android Studio", "Java", "Firebase"]
+    },
+    {
+      "title": "E-Report: A Barangay Reporting System",
+      "description": "A software project for barangay and municipalities' incident report and document request system.",
+      "skills": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "A Piece of Heart",
+      "description": "A game development project with a plot utilizing the 5 stages of heartbreak.",
+      "skills": ["C#", "Unity"]
+    }
+  ],
+  "tutorial": [
+    {
+      "title": "Mario Plan",
+      "description": "React Redux and Firebase tutorial by The Net Ninja",
+      "skills": [
+        "React",
+        "Redux",
+        "Firebase",
+        "Firestore",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Book List",
+      "description": "Book List Project: a React Context and Hooks tutorial by The Net Ninja",
+      "skills": ["React", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Context Hooks",
+      "description": "React Context and Hooks tutorial by The Net Ninja",
+      "skills": ["React", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Hooks",
+      "description": "React Hooks tutorial by The Net Ninja",
+      "skills": ["React", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Context",
+      "description": "React Context tutorial by The Net Ninja",
+      "skills": ["React", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Pokemon Times",
+      "description": "React Router tutorial by The Net Ninja",
+      "skills": ["React", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "To-do List",
+      "description": "React To-do List tutorial by The Net Ninja",
+      "skills": ["React", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Math Calculator Plugin",
+      "description": "A tutorial on how to create a custom cordova plugin",
+      "skills": ["Cordova", "Gulp", "Plugman", "Java"]
+    },
+    {
+      "title": "MERN Shopping List",
+      "description": "A MERN tutorial from Traversy Media",
+      "skills": ["React", "Redux", "ExpressJS", "MongoDB"]
+    }
+  ],
+  "frontEndMentor": [
+    {
+      "title": "3 Column Preview Card Component",
+      "description": "A front end mentor challenge",
+      "skills": ["HTML", "CSS", "JavaScript", "Mobile First Responsive Design"]
+    },
+    {
+      "title": "Stats Preview Card Component",
+      "description": "A front end mentor challenge",
+      "skills": ["HTML", "CSS", "JavaScript", "Mobile First Responsive Design"]
+    },
+    {
+      "title": "Order Summary Card Component",
+      "description": "A front end mentor challenge",
+      "skills": ["HTML", "CSS", "JavaScript", "Mobile First Responsive Design"]
+    },
+    {
+      "title": "NFT Preview Card Component",
+      "description": "A front end mentor challenge",
+      "skills": ["HTML", "CSS", "JavaScript", "Mobile First Responsive Design"]
+    },
+    {
+      "title": "Interactive Rating Component",
+      "description": "A front end mentor challenge",
+      "skills": ["HTML", "CSS", "JavaScript", "Mobile First Responsive Design"]
+    },
+    {
+      "title": "Product Preview Card Component",
+      "description": "A front end mentor challenge",
+      "skills": ["HTML", "CSS", "JavaScript", "Mobile First Responsive Design"]
+    },
+    {
+      "title": "QR Code Component",
+      "description": "A front end mentor challenge",
+      "skills": ["HTML", "CSS", "JavaScript", "Mobile First Responsive Design"]
+    }
+  ],
+  "designs": [
+    {
+      "title": "DeliverEat",
+      "description": "UI/UX Design in Figma",
+      "skills": ["Figma", "UI/UX"]
+    },
+    {
+      "title": "Ichiban Snacks",
+      "description": "Logo revamp for a milk tea business",
+      "skills": ["Photoshop", "Logo Upgrade"]
+    },
+    {
+      "title": "CORES T-Shirt Design",
+      "description": "T-shirt design for an event",
+      "skills": ["Photoshop", "T-Shirt Design", "Illustrator"]
+    }
+  ]
+}
