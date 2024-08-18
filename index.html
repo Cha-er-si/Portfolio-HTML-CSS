@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charles</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/My-Logo-v4.ico" />
     <script src="https://use.fontawesome.com/25c06bc126.js"></script>
   </head>
   <body>
@@ -104,12 +103,6 @@
     </section>
     <!-- End of About Section -->
 
-    <!-- Education Section -->
-    <!-- <section id="education">
-      <div class="education container"></div>
-    </section> -->
-    <!-- End of Education Section -->
-
     <!-- Work Experience -->
     <section id="experience">
       <div class="experience container">
@@ -152,21 +145,36 @@
 
     <!-- Project Section -->
     <section id="projects">
-      <div class="projects container"></div>
+      <div class="projects container">
+        <h1 class="title">PROJECTS</h1>
+        <div class="sub-links">
+          <a class="sub-title active" onclick="changeProjectDisplay(event)"
+            >PERSONAL</a
+          >
+          <a class="sub-title" onclick="changeProjectDisplay(event)"
+            >TUTORIAL</a
+          >
+          <a class="sub-title" onclick="changeProjectDisplay(event)"
+            >FRONT-END MENTOR</a
+          >
+          <a class="sub-title" onclick="changeProjectDisplay(event)">DESIGNS</a>
+        </div>
+        <div class="personal sub-container active">
+          <h1 class="sub-title">PERSONAL</h1>
+        </div>
+        <div class="tutorial sub-container">
+          <h1 class="sub-title">TUTORIAL</h1>
+        </div>
+        <div class="front-end-mentor sub-container">
+          <h1 class="sub-title">FRONT-END MENTOR</h1>
+        </div>
+        <div class="designs sub-container">
+          <h1 class="sub-title">DESIGNS</h1>
+        </div>
+      </div>
     </section>
     <!-- End of Project Section -->
 
-    <!-- Contact Section -->
-    <!-- <section id="contact">
-      <div class="contact container"></div>
-    </section> -->
-    <!-- End of Contact Section -->
-
-    <!-- Footer Section -->
-    <!-- <section id="footer">
-      <div class="footer"></div>
-    </section> -->
-    <!-- End of Footer Section -->
     <script src="script.js"></script>
   </body>
 </html>
