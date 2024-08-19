@@ -35,8 +35,12 @@ const toggleMenu = (onCLick = true) => {
     nav_list.classList.toggle("active");
 
     sections.forEach((element) => {
-      element.style.position = "relative";
-      element.style.zIndex = -1;
+      element.style.position = hamburger_menu.classList.contains("active")
+        ? "relative"
+        : "static";
+      element.style.zIndex = hamburger_menu.classList.contains("active")
+        ? -1
+        : 1;
     });
   } else {
     hamburger_menu.classList.remove("active");

@@ -352,7 +352,7 @@ a.sub-title {
 /* About */
 #about .about {
   margin-top: 1rem;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #about .about .left,
@@ -615,6 +615,7 @@ a.sub-title {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    overflow-y: hidden;
   }
 
   #about .about .left,
