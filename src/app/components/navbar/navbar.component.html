@@ -1,0 +1,89 @@
+<!-- <nav class="navbar">
+  <div class="navbar__logo">CHAERSI</div>
+  <div class="navbar__links">
+    <a
+      routerLink="/"
+      routerLinkActive="navbar__link--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="navbar__link"
+    >
+      HOME
+    </a>
+
+    <a
+      routerLink="/about"
+      routerLinkActive="navbar__link--active"
+      class="navbar__link"
+    >
+      ABOUT
+    </a>
+
+    <a
+      routerLink="/work-experience"
+      routerLinkActive="navbar__link--active"
+      class="navbar__link"
+    >
+      EXPERIENCE
+    </a>
+
+    <a
+      routerLink="/projects"
+      routerLinkActive="navbar__link--active"
+      class="navbar__link"
+    >
+      PROJECTS
+    </a>
+  </div>
+</nav> -->
+<mat-toolbar class="navbar">
+  <div
+    class="navbar__logo"
+    mat-button
+    routerLink="/home"
+    routerLinkActive="active"
+  >
+    CHAERSI
+  </div>
+  <span class="navbar__spacer"></span>
+  <button mat-icon-button class="navbar__menu" (click)="showLinks()">
+    <mat-icon #navBarMenuIcon>menu</mat-icon>
+  </button>
+  <nav class="navbar__links" #navBarLinks>
+    <a
+      mat-button
+      routerLink="/"
+      routerLinkActive="navbar__link--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="navbar__link"
+      (click)="hideMobileMenu()"
+      >HOME</a
+    >
+    <a
+      mat-button
+      routerLink="/about"
+      routerLinkActive="navbar__link--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="navbar__link"
+      (click)="hideMobileMenu()"
+      >ABOUT</a
+    >
+    <a
+      mat-button
+      routerLink="/work-experience"
+      routerLinkActive="navbar__link--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="navbar__link"
+      (click)="hideMobileMenu()"
+      >EXPERIENCE</a
+    >
+    <a
+      mat-button
+      routerLink="/projects"
+      routerLinkActive="navbar__link--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="navbar__link"
+      (click)="hideMobileMenu()"
+      >PROJECTS</a
+    >
+  </nav>
+</mat-toolbar>

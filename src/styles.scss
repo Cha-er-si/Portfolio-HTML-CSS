@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+}
+
+:root {
+  --black: #363636;
+  --white: #fffffa;
+  --platinum: rgba(299, 299, 299, 0.6157);
+  --platinum-full: rgba(299, 299, 299);
+  --blue: #242f40;
+  --gray: #d9d9d9;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--black);
+  color: var(--platinum);
+}
