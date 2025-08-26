@@ -3,6 +3,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    CommonModule,
   ],
   standalone: true,
   templateUrl: './navbar.component.html',
@@ -21,6 +23,7 @@ export class NavbarComponent {
   @ViewChild('navBarLinks') links!: ElementRef;
   @ViewChild('navBarMenuIcon') menuIcon!: MatIcon;
   isMobile: boolean = true;
+  isMenuOpen: boolean = false;
 
   constructor() {}
 
@@ -28,13 +31,15 @@ export class NavbarComponent {
     const navBarLink = this.links?.nativeElement;
     const display = navBarLink.style.display;
     const menuIcon = this.menuIcon;
-    console.log({ menuIcon, display });
+
     if (display === 'none' || display === '') {
       navBarLink.style.display = 'flex';
       menuIcon.fontIcon = 'close';
+      this.isMenuOpen = true;
     } else {
       navBarLink.style.display = 'none';
       menuIcon.fontIcon = 'menu';
+      this.isMenuOpen = false;
     }
   }
 
@@ -52,6 +57,7 @@ export class NavbarComponent {
 
       navBarLink.style.display = 'none';
       menuIcon.fontIcon = 'menu';
+      this.isMenuOpen = false;
     }
   }
 }

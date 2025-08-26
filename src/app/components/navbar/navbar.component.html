@@ -46,9 +46,18 @@
   </div>
   <span class="navbar__spacer"></span>
   <button mat-icon-button class="navbar__menu" (click)="showLinks()">
-    <mat-icon #navBarMenuIcon>menu</mat-icon>
+    <mat-icon
+      class="navbar__menu-icon"
+      [ngClass]="{ 'navbar__menu-open': isMenuOpen }"
+      #navBarMenuIcon
+      >menu</mat-icon
+    >
   </button>
-  <nav class="navbar__links" #navBarLinks>
+  <nav
+    class="navbar__links"
+    [ngClass]="{ 'navbar__links-open': isMenuOpen }"
+    #navBarLinks
+  >
     <a
       mat-button
       routerLink="/"

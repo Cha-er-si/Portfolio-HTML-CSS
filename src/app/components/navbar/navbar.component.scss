@@ -20,6 +20,14 @@
     &:active {
       background-color: transparent;
     }
+
+    &-icon {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &-open {
+      transform: rotate(180deg);
+    }
   }
 
   &__links {
@@ -30,7 +38,15 @@
     top: 10%;
     right: 0;
     width: 100vw;
+    transform: translateY(-1rem);
+    opacity: 0;
     background-color: var(--platinum);
+    transition: all 0.3s ease-in-out;
+
+    &-open {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   &__link {
@@ -66,6 +82,8 @@
       gap: 1rem;
       width: unset;
       background-color: unset;
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }
