@@ -1,0 +1,19 @@
+<div class="experience">
+  <h1 class="experience__title title-text">EXPERIENCE</h1>
+  <p-timeline
+    [value]="experiences()"
+    [align]="timelineAlign()"
+    styleClass="customized-timeline"
+  >
+    <ng-template #marker let-event>
+      <div class="experience__logo-container">
+        <img [src]="event.logoUrl" [alt]="event.company" class="logo" />
+      </div>
+    </ng-template>
+    <ng-template #content let-event class="experience__details">
+      <p class="job-title">{{ event.role }}</p>
+      <p class="date">{{ event.date }}</p>
+      <p class="company-name">{{ event.company }}</p>
+    </ng-template>
+  </p-timeline>
+</div>

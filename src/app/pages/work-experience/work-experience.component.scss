@@ -1,0 +1,56 @@
+.experience {
+  &__title {
+    font-size: clamp(2.5rem, 1.857rem + 3.214vw, 7rem);
+  }
+
+  &__logo-container {
+    width: clamp(5rem, 4.522rem + 2.392vw, 6rem);
+    height: clamp(5rem, 4.522rem + 2.392vw, 6rem);
+    border-radius: clamp(5rem, 4.522rem + 2.392vw, 6rem);
+    padding: 1rem;
+    overflow: hidden;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: clamp(4.5rem, 4.022rem + 2.392vw, 5.5rem);
+      width: clamp(4.5rem, 4.022rem + 2.392vw, 5.5rem);
+      object-fit: contain;
+      border-radius: clamp(4.5rem, 4.022rem + 2.392vw, 5.5rem);
+    }
+  }
+
+  &__details {
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+/** Media Queries **/
+@media only screen and (min-width: 993px) {
+  .experience {
+    &__title {
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      bottom: clamp(1rem, -1.522rem + 4.076vw, 5rem);
+      right: clamp(1rem, -1.522rem + 4.076vw, 5rem);
+      rotate: -90deg;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/** Animations **/
+@media (prefers-reduced-motion: no-preference) {
+  .experience {
+    &__title {
+      transition: 0.3s linear animation;
+      animation: 0.5s text-slide-in-right linear forwards;
+    }
+  }
+}
