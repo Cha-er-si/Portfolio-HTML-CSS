@@ -50,7 +50,9 @@
   .experience {
     &__title {
       transition: 0.3s linear animation;
-      animation: 0.5s text-slide-in-right linear forwards;
+      animation:
+        2s 1s add-platinum-color linear infinite,
+        0.5s text-slide-in-right linear forwards;
     }
   }
 }
