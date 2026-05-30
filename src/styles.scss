@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+}
+
+:root {
+  --black: #363636;
+  --white: #fffffa;
+  --platinum: #b0b0ae;
+  --blue: #242f40;
+  --gray: #d9d9d9;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--black);
+  color: var(--platinum);
+}
+
+.title-text {
+  font-size: clamp(3.5rem, 2.929rem + 2.857vw, 7.5rem);
+  -webkit-text-stroke: 0.1rem var(--platinum);
+  color: transparent;
+  text-align: center;
+  transition: 0.3s linear animation;
+  animation:
+    2s 1s add-platinum-color linear infinite,
+    0.5s text-slide-in linear forwards;
+}
+
+@keyframes text-slide-in {
+  from {
+    transform: translateX(-5%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes add-platinum-color {
+  0%,
+  100% {
+    color: var(--white);
+  }
+
+  25%,
+  75% {
+    color: transparent;
+  }
+}
+
+/** Work Experience Timeline **/
+p-timeline {
+  .p-timeline-event {
+    margin-bottom: clamp(2rem, 0.571rem + 7.143vw, 5rem);
+    transition: 0.5s linear animation;
+    animation: 0.5s slide-up linear forwards;
+
+    .p-timeline-event-separator {
+      margin: 0.5rem;
+      margin-top: 0;
+    }
+
+    .p-timeline-event-content {
+      margin-top: clamp(0.5rem, 0.262rem + 1.19vw, 1rem);
+      p {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .job-title {
+        font-size: clamp(1rem, 0.964rem + 0.179vw, 1.25rem);
+        font-weight: bold;
+      }
+
+      .date {
+        font-size: clamp(0.75rem, 0.714rem + 0.179vw, 1rem);
+      }
+
+      .company-name {
+        font-size: clamp(1rem, 0.964rem + 0.179vw, 1.25rem);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  p-timeline {
+    .p-timeline-event {
+      .p-timeline-event-opposite {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 993px) {
+  p-timeline {
+    margin-top: 5rem;
+  }
+}
+
+@keyframes text-slide-in-right {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(25%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,22 @@
+@use "@angular/material" as mat;
+
+.card-container {
+  margin-block: 1rem;
+  max-width: 30rem;
+  height: 100%;
+
+  mat-card {
+    background-color: var(--black);
+    height: 100%;
+
+    mat-card-footer {
+      padding: 1rem;
+    }
+  }
+
+  @include mat.chips-overrides(
+    (
+      label-text-color: var(--platinum),
+    )
+  );
+}

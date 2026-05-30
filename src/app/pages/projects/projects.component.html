@@ -1,0 +1,32 @@
+<div class="projects">
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab label="PERSONAL">
+      <div class="projects__tab-item-container">
+        @for (project of projectService.personal(); track $index) {
+          <app-project-card [project]="project"></app-project-card>
+        }
+      </div>
+    </mat-tab>
+    <mat-tab label="TUTORIAL">
+      <div class="projects__tab-item-container">
+        @for (project of projectService.tutorial(); track $index) {
+          <app-project-card [project]="project"></app-project-card>
+        }
+      </div>
+    </mat-tab>
+    <mat-tab label="FRONT END MENTOR">
+      <div class="projects__tab-item-container">
+        @for (project of projectService.frontEndMentor(); track $index) {
+          <app-project-card [project]="project"></app-project-card>
+        }
+      </div>
+    </mat-tab>
+    <mat-tab label="DESIGN">
+      <div class="projects__tab-item-container">
+        @for (project of projectService.designs(); track $index) {
+          <app-project-card [project]="project"></app-project-card>
+        }
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
