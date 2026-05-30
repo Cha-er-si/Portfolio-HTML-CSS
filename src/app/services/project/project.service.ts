@@ -15,10 +15,12 @@ export class ProjectService {
   tutorial = signal<any[]>([]);
   frontEndMentor = signal<any[]>([]);
   designs = signal<any[]>([]);
+  loading = signal<boolean>(true);
 
   constructor(private firestore: Firestore) {}
 
   async fetchProjects() {
+    this.loading.set(true);
     const personalReference = collection(this.firestore, 'personal');
     const personalSnapshot = await getDocs(personalReference);
     const personalData = personalSnapshot.docs.map((doc) => {
@@ -57,5 +59,6 @@ export class ProjectService {
       };
     });
     this.designs.set(designsData);
+    this.loading.set(false);
   }
 }

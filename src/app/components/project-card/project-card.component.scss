@@ -8,6 +8,7 @@
   mat-card {
     background-color: var(--black);
     height: 100%;
+    max-width: 90vw;
 
     mat-card-footer {
       padding: 1rem;
