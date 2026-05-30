@@ -1,0 +1,29 @@
+@use '@angular/material' as mat;
+
+.projects {
+  margin: 1rem;
+
+  @include mat.tabs-overrides(
+    (
+      active-indicator-color: var(--platinum),
+      active-focus-indicator-color: var(--platinum),
+      active-hover-indicator-color: var(--platinum),
+      divider-color: transparent,
+      active-label-text-color: var(--platinum),
+      inactive-label-text-color: var(--platinum),
+      active-hover-label-text-color: var(--platinum),
+      inactive-hover-label-text-color: var(--platinum),
+      active-focus-label-text-color: var(--platinum),
+      inactive-focus-label-text-color: var(--platinum),
+      pagination-icon-color: var(--platinum),
+    )
+  );
+  
+
+  &__tab-item-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}
